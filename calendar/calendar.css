@@ -1,0 +1,82 @@
+body{
+    background-color: grey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+    background-color: aquamarine;
+}
+.calendar{
+    margin: auto;
+    width: 600px;
+    background-color: white;
+    
+    box-shadow: 0px 0px 15px 3px grey;
+    
+}
+.month{
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: yellowgreen;
+    color: black;
+}
+.weekends{
+    padding: 7px 0;
+    background-color: yellowgreen;
+    color: black;
+    display: flex;
+}
+.weekends div {
+    text-align: center;
+    width: 14.28%;
+}
+.days {
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.days div {
+       width: 14.28%;
+       margin-bottom: 10px;
+       padding: 10px 0;
+       transition: all 0.4s;
+
+}
+.days div:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.today{
+    background-color: yellow;
+}
+.prev_date{
+    color:gray;
+}
+#month{
+    font-size: 30px;
+    font-weight: 500;
+}
+.prev,.next{
+    cursor: pointer;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+    background-color: rgb(82, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4sec;
+}
